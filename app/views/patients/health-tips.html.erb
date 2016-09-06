@@ -1,23 +1,63 @@
-<%provide(:title, 'Health-Tips')%>
+<%provide(:title, 'Health-Tips | RemApp Tips')%>
 <%= render 'header' %>
 <div class="row">
-	<div class="large-4 columns" style="background: grey; height: 125px;">
+	<h2>Health-Tips</h2>
+	<div class="large-4 columns" style="background: #eceff1; border-radius: 4px; margin-right: 10px;">
 	<div class="row">
 		<div class="large-12 columns">
-				content one
+				<h1>Tip one</h1>
+				<img src="/assets/bgimage.png">
 		</div>
 	</div>
 	
 	</div>
 	
-	<div class="large-4 columns" style="background: wheat; height: 250px;">
-		content two
+	<div class="large-4 columns"  style="background: #eceff1; border-radius: 4px; margin-left: 5px">
+		<h1>Tip two</h1>
+		<img src="/assets/bgimage.png">
 	</div>
-	<div class="large-4 columns" style="background: lightgrey; height: 500px">
-		content three
+	<div class="large-3 columns" style="background: #004d40; border-radius: 4px margin-left: 20px; border-radius: 4px; color: #eceff1">
+		<h1>Recent posts</h1>
+		<img src="/assets/bgimage.png">
+		<div class="row">
+			<div class="large-12 columns">
+				<h3>@remapp -- tweets</h3>
+				<div>
+					<img src="/assets/index.jpg">
+				</div>
+				<hr>
+			</div>
+			<div class="large-12 columns">
+				<h3>header</h3>
+				<p>content</p>
+				<hr >
+			</div>
+			<div class="large-12 columns">
+				<div class="row">
+					<div class="large-12 columns">
+						<h5>Categories</h5>
+						<div class="row">
+							<div class="large-6 columns">
+								<a href="#" class="button" style="font-size: 12px;">Exercise Tips</a>
+							</div>
+							<div class="large-6 columns">
+								<a href="#" class="button" style="font-size: 12px">Home made</a>
+							</div>
+						</div>
+						<div class="row">
+						<div class="large-12 columns">
+							<a href="#" class="button" style="font-size: 12px; width: 60%">Home made</a>
+						</div>	
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 <div class="large-12">
 	<h2>More stuffs here</h2>
+
 </div>
 <%= render 'footer' %>

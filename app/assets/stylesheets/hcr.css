@@ -49,6 +49,7 @@ background-color: #4db6ac;
 	margin-right: 20px;
 	font-family: "Times New Roman", Times, serif;
 	color: #000000;
+	
 }
 #horizontal-center li a:hover{
 	font-family: "Times New Roman", Times, serif;
@@ -63,6 +64,7 @@ background-color: #4db6ac;
 }
 .center-menu{
 	margin-top: 12px;
+	margin-left: 20px;
 }
 
 .logo{

@@ -12,6 +12,7 @@ p, ol, ul, td {
   font-size: 13px;
   line-height: 18px;
   margin-top: 2px;
+
 }
 
 pre {
@@ -24,11 +25,11 @@ a {
   color: #000;
 
   &:visited {
-    color: #fff;
+    color: #e53935;
   }
 
   &:hover {
-    color: #fff;
+    
     background-color: none;
   }
 }
