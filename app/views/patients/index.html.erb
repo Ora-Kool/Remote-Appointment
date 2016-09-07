@@ -5,7 +5,7 @@
    
    <div style="text-align: center">
      <%= link_to "Get Started ", new_patient_path, class: 'button',
-      style: 'margin-top: 350px; margin-left:100px; border-radius: 10px' %>
+      style: 'margin-top: 350px; margin-left:100px; color: #ffffff' %>
          
    </div>
    
@@ -145,11 +145,11 @@
 <div class="row">
   <div class="large-12 available-doctors columns">
     <h2>Meet the Doctors</h2>
-    <h4>There's always a doctor ready to talk to you about your health issue, with little to no wait time.</h4>
+    <h4>There's always a doctor ready to talk to you about your health issue, just make an appointment with him.</h4>
   </div>
 </div>
 <div class="row">
-  <div class="large-4 large-offset-4 columns" style="background: #80cbc4;  margin-top: 10px;">
+  <div class="large-4 large-offset-4 columns" style="background: #80cbc4;  margin-top: 10px; border-radius: 5px">
     <div style="text-align: center; height: 550px; margin-top: 10px;">
      <img src="/assets/availdocs.svg" style="border-radius: 190px; background: #004d40;">
      <h4>name, location, speciality</h4>
@@ -165,10 +165,30 @@
         <ul class="menu footerInner">
           <li><a href="#" class="active">NEWS</a></li>
           <li><a href="#">HEALTH TIPS</a></li>
-          <li><a href="#">RemApp FEATURE</a></li>
+          <li><a href="#">REMAPP FEATURE</a></li>
         </ul>
+        <div class="large-12 columns" id="displaycontent">
+               <h3>News</h3>
+               <p><%= render 'footer' %></p>
+        </div>
+
       </div>
+
     </div>
+    <div class="large-6 separators columns">
+      <h2 style="text-align: center; color: #ffffff;">Contact us</h2>
+      <div class="row">
+        <div class="large-7 columns" style="text-align: center">
+          <p>Call us 24/7 @ </p>
+          <p>(+237) xxx-xxx-xxx</p>
+          <h5>Contact information</h5>
+
+        </div>
+      </div>
+      
+
+    </div>
+
   </div>
   <%= render 'footer' %>
 </div>

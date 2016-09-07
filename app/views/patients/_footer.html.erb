@@ -8,7 +8,12 @@
 			<h4>follows us</h4>
 		</div>
 		<div class="large-4 columns" style="color: white; text-align: center; margin-top: 50px">
-				<p>Terms | Privacy | Contacts | Providers</p>
+				<!--<p>Terms | Privacy | Contacts | Providers</p>-->
+				<div class="menu simple">
+					<%= link_to "Terms | ", remotappoint_terms_of_use_path %>
+					<%= link_to "Privacy",  remotappoint_privacy_policy_path %>
+				</div>
+
 		</div>
 	</div>
 </div> 
