@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 #mongodb gem
 gem 'mongoid'
 
+gem 'devise', '~> 4.2'
+
 
 #paperclip is used to upload photos
 gem 'mongoid-paperclip', '~> 0.0.10'

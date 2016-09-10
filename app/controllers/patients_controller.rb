@@ -1,4 +1,5 @@
 class PatientsController < ApplicationController
+  before_action :authenticate_user!, :except => [:index]
   before_action :set_patient, only: [:show, :edit, :update, :destroy]
 
   # GET /patients
@@ -12,6 +13,9 @@ class PatientsController < ApplicationController
   def show
   end
 
+  def hospitals
+  end
+  
 
   # GET /patients/new
   def new

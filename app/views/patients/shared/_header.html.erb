@@ -4,8 +4,16 @@
     <div class="top-bar-right">
     <ul class="menu">
       <li><a href="#" class="sign" id="fr">Fr</a></li>
-      <li><%= link_to "Sign up", remotappoint_new_path, class: 'button small-10 sign' %></li>
-      <li><a href="#" class="button small-10 log">Log in</a></li>
+      <% if user_signed_in? %>
+      <li><%= link_to 'Logout', destroy_user_session_path, :method => :delete, class: 'button small-10 log' %></li>
+
+      <% else %>
+
+      <li><%= link_to "Sign up", new_user_registration_path, class: 'button small-10 sign' %></li>
+      <li><%= link_to 'Log in', new_user_session_path, class: 'button small-10 log' %></li>
+
+      <% end -%>
+
     </ul>
   </div>
   </div>
@@ -18,11 +26,14 @@
   </div>
   <div class="menu-centered">
     <ul class="menu center-menu"  id="horizontal-center">
+    <% if user_signed_in? %>
+
+    <%else%> 
       <li><%= link_to "ABOUT", remotappoint_about_path %></li>
        <li><%= link_to "HOW IT WORKS", remotappoint_how_it_works_path %></li>
         <li><%= link_to "HEALTH TIPS", remotappoint_health_tips_path %></li>
          <li><%= link_to "NEWS", remotappoint_news_path %></li>
-           
+           <% end -%>
     </ul>
   </div>
 </div>
